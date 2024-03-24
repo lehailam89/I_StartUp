@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box; 
+}
+body{
+    height: 800px;
+    background-image: url("https://wallpapers.com/images/hd/soaring-high-in-the-sky-gagej3lyepm6fkot.webp");
+    background-size: cover;
+    background-repeat: no-repeat; /* Đảm bảo hình ảnh không lặp lại */
+    background-position: center; /* Hiển thị hình ảnh ở giữa */
+}
+
+/* Header */
+.header{
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    background: #fff;
+}
+.header{
+    border: 1px solid #F2F2EA;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background: #87C4FD;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.header .row .inner-main{
+    display: flex;  
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-left: 0;
+    align-items: center;
+    font-weight: 500;
+}
+.header .inner-main .inner-logo ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.header .inner-main .inner-logo ul li{
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.header .inner-main .inner-list ul{
+    display: flex;
+    list-style-type: none;
+}
+.header .inner-main .inner-list ul li{
+    margin-right: 30px;
+}
+.header .inner-main .inner-tick ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.header .inner-main .inner-tick ul li {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 50px; /* Đặt line-height bằng với chiều cao */
+}
+/* End Header */
+
+/* Form */
+.section-form{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+}
+.signin{
+    border: 1px solid none;
+    padding: 30px;
+    width: 60%;
+    border-radius: 15px;
+    background: #fff;
+}
+.signin .signin-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.signin .signin-password{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+.signin .signin-email{
+    margin-top: 10px;
+    color: #858585;
+}
+input{
+    width: 95%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.signin .signin-mk ul{
+    margin-top: 15px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color: #858585;
+    margin-bottom: 0;
+}
+.inline-mk{
+    margin-left: -40px;
+}
+.signin .signin-gray{
+    margin-top: 20px;
+    width: 95%;
+    height: 45px;
+    border: none;
+    background: #87C4FF;
+    border-radius: 20px;    
+    color: #fff;
+}
+.signin .signin-or {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.signin .signin-or .or-border{
+    width: 40%;
+    border-bottom: 1px solid #ddd;
+}
+.signin .signin-or .or-content{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #00000066;
+}
+.signin .signin-google{
+    margin-top: 20px;
+    width: 95%;
+    height: 50px;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 20px;   
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.signin .signin-google i{
+    color: #FBBC05;
+    font-size: 25px;
+}
+.signin .signin-google div{
+    color: #0000008d;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.signin .signin-content{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box; 
+}
+body{
+    background: #F2F2EA;
+}
+/* Header */
+.header{
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    background: #fff;
+}
+.header{
+    border: 1px solid #F2F2EA;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background: #87C4FD;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.header .row .inner-main{
+    display: flex;  
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-left: 0;
+    align-items: center;
+    font-weight: 500;
+}
+.header .inner-main .inner-logo ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.header .inner-main .inner-logo ul li{
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.header .inner-main .inner-list ul{
+    display: flex;
+    list-style-type: none;
+}
+.header .inner-main .inner-list ul li{
+    margin-right: 30px;
+}
+.header .inner-main .inner-tick ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.header .inner-main .inner-tick ul li {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 50px; /* Đặt line-height bằng với chiều cao */
+}
+.header .inner-main .inner-tick ul li a {
+    color: #fff; /* Màu chữ mặc định */
+    cursor: pointer;
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+    display: block; /* Để liên kết có thể nhận được hover và màu sắc chuyển đổi */
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 50px; /* Đặt line-height bằng với chiều cao */
+    transition: color 0.5s, border-color 0.5s; /* Hiệu ứng chuyển đổi màu khi hover */
+}
+
+.header .inner-main .inner-tick ul li a:hover {
+    color: #000 !important; /* Màu chữ đen khi hover */
+}
+.header .inner-main .inner-tick ul li:hover{
+    border-color: transparent;
+    color: #000;
+}
+
+
+/* End header */
+
+/* Section-one-left */
+.section-one .row{
+    /* border: 1px solid #000; */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.section-one .inner-content{
+    display: flex;
+}
+.section-one .inner-app{
+    border: 2px solid #000;
+    width: 180px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.section-one .inner-app {
+    position: relative; /* Cho phép sử dụng absolute position cho đối tượng con */
+}
+
+.section-one .inner-app::after {
+    content: ''; /* Tạo một pseudo-element để áp dụng bóng */
+    position: absolute; /* Đặt vị trí tuyệt đối để bóng xuất hiện ở phía dưới */
+    left: 5px;
+    bottom: -3px; /* Đặt bóng ở phía dưới của phần tử */
+    width: 100%;
+    height: 3px; /* Chiều cao của bóng */
+    background: rgba(0, 0, 0, 0.15); /* Màu của bóng */
+    border-radius: 10px; /* Đường cong của bóng */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.723); /* Đổ bóng và giảm độ mờ và độ sâu của bóng */
+}
+
+
+.section-one .inner-title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.section-one .inner-start ul {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid #ddd;
+    width: 250px;
+    justify-content: center;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    border-radius: 30px;
+    background: #87C4FD;
+    margin-bottom: 50px;
+}
+.section-one .inner-start ul li{
+    text-align: center;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.section-one .ss1-left-logo{
+    font-size: 30px;
+    margin-left: -30px;
+}
+.section-one .inner-content .ss1-left-logo ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.section-one .inner-content .ss1-left-logo .borders{
+    margin-left: 10px;
+    border-bottom: 2px solid #000;
+    width: 150px;
+}
+.section-one .inner-content .ss1-left-number{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* End section one left */
+
+/* Secion one right 1 */
+.section-one .section-one__1 {
+    background-image: url("https://static.toiimg.com/photo/71834751.cms");
+    background-size: cover; /* Ảnh sẽ tự động co hoặc mở rộng để phù hợp với kích thước của phần tử */
+    background-position: center; /* Căn giữa ảnh */
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 20px;    
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+.section-one .section-one__1 .section-one__1--above{
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    width: calc(100% - 50px); /* Trừ đi 2 lần padding của phần tử cha */
+    left: 15px; /* Đặt phần tử này ở bên trái */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+.section-one .section-one__1 .section-one__1--below{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    width: calc(100% - 50px); /* Trừ đi 2 lần padding của phần tử cha */
+    left: 15px; /* Đặt phần tử này ở bên trái */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+/* End Section one right 1 */
+
+/* Section-one__2 */
+    .section-one .section-one__2{
+        background: #87C4FF;    
+        width: 100%;
+        height: 200px;
+        padding: 15px;
+        border-radius: 20px;    
+        color: #fff;
+        position: relative;
+    }
+    .section-one .list{
+        display: flex;
+    }
+    .section-one .list-left{
+        margin-top: 100px;
+    }
+    .section-one .list-right{
+        margin-top: -100px;
+        margin-left: -25px; 
+        display: flex;
+        flex-direction: column;
+    }
+    .section-one .section-one__2 .section-one__2--above{
+        position: absolute;
+        top: 15px;
+        width: 100%;
+        width: calc(100% - 50px); /* Trừ đi 2 lần padding của phần tử cha */
+        left: 15px; /* Đặt phần tử này ở bên trái */
+        align-items: center;
+        font-weight: 500;
+    }
+    .section-one .section-one__2 .section-one__2--above .section-one__2--above--content{
+        width: 100%;
+        width: calc(100% - 5px); /* Trừ đi 2 lần padding của phần tử cha */
+        left: 15px; /* Đặt phần tử này ở bên trái */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 23px;
+    }
+    .section-one .section-one__2 .section-one__2--below{
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        width: calc(100% - 50px); /* Trừ đi 2 lần padding của phần tử cha */
+        left: 15px; /* Đặt phần tử này ở bên trái */
+        align-items: center;
+        font-size: 20px;
+        
+    }
+    .section-one .section-one__2 .section-one__2--below .section-one__2--below--content{
+        width: calc(100% - 20px); /* Trừ đi 2 lần padding của phần tử cha */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        border: 1px solid none;
+        width: 250px;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        background: #6D9ECC;
+        border-radius: 15px;
+    }
+/* End Section-one__2 */
+
+/* Section-one__3 */
+.section-one__3{
+    border: 1px solid #ddd;
+    background: #87C4FF;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 15px 10px;  
+    text-align: center;
+    color: #fff;
+}
+.section-one__3 .section-one__3--p1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.section-one__3 .section-one__3--image img{
+    border-radius: 50%;
+}
+.section-one__3 .section-one__3--name{
+    margin-top: 10px;
+    font-weight: 500;
+}
+/* End Section-one__3 */
+
+/* Section-one__4 */
+.section-one__4{
+    border: 1px solid none;
+    margin-top: 10px;
+    width: 100%;
+    height: 110px;
+    padding: 15px 10px;
+    background: #87C4FF;
+    border-radius: 20px;
+    color: #fff;
+}
+.section-one__4 .section-one__4--title{
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.section-one__4 .section-one__4--content ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.section-one__4 .section-one__4--content ul li{
+    margin-left: -10px;
+}
+/* End Section-one__4 */
+
+/* Section-one__5 */
+.section-one__5{
+    border: 1px solid none;
+    margin-top: 2px;
+    width: 100%;
+    height: 130px;
+    padding: 15px 10px;
+    background: #E0F4FF;
+    border-radius: 20px;
+    color: #000;
+}
+.section-one__5 .section-one__5--title{
+    padding-left: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.section-one__5 .section-one__5--content ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.section-one__5 .section-one__5--content ul li{
+    margin-left: -10px;
+    font-weight: 500;
+    font-size: 23px;
+}
+/* End Section-one__5 */
+
+/* Section-one__6 */
+.section-one__6{
+    border: 1px solid none;
+    margin-top: 10px;   
+    width: 100%;
+    height: 150px;
+    padding: 20px 25px;
+    background: #fff;
+    border-radius: 20px;
+    color: #000;   
+    font-weight: 500; 
+}
+.section-one__6--content ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.section-one__6--content ul li{
+    margin-left: -40px;
+}
+
+/* End Section-one__6 */
+/* End Section one */
+
+.path{
+    width: 95%;
+    border-bottom: 2px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;    
+    margin-bottom: 5px;
+}
+
+/* Section-two  */
+.section-two{
+    border: 1px solid none;
+    width: auto;    
+    height: 1000px;
+    background: #87C4FF;
+    display: flex; 
+    align-items: center; /* Căn giữa theo chiều dọc */
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+}
+.section-two .section-two--content{
+    text-align: center;
+}
+/* End Section-two */
+
+/* Footer */
+.footer{
+    margin-top: 50px;
+    border: 1px solid none;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background: #87C4FD;
+    font-size: 18px;
+    color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.footer .footer__one--logo ul{
+    display: flex;
+    list-style-type: none;
+}
+.footer .footer__one--search{
+    border: 1px solid none;
+    width: 330px;
+    padding: 13px;
+    border-radius: 15px;
+    background: #fff;
+}
+.footer .footer__one--search .search-text{
+    border: none;
+    background: none;
+    outline: none;
+}
+.footer .footer__one--search .search-bt{
+    background: #87C4FF;
+    padding: 12px;   
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: 400;
+}
+
+.footer .footer__two--pages, .footer__threee--service, .footer__four--sollution, .footer-five--contact{
+    border: 2px solid #fff;
+    width: 200px;
+    padding: 3px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: -20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.footer .footer__one--logo ul li{
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer .footer--list li{
+    list-style-type: none;
+    margin-left: -40px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* End Footer */
