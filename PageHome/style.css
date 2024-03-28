@@ -196,6 +196,17 @@ body{
     align-items: center;
     font-size: 25px;
 }
+
+    /* Click pagePlace */
+        .click-pagePlace ul {
+            cursor: pointer;
+        }
+        .click-pagePlace ul:hover{
+            color: #fff;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+    /* End Click pagePlace */
 /* End Section one right 1 */
 
 /* Section-one__2 */

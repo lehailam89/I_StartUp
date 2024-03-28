@@ -33,3 +33,9 @@ function handleLogin(data) {
         alert("Tên đăng nhập hoặc mật khẩu không chính xác");
     }
 }
+
+var signUpClick = document.getElementById("signup-click");
+
+signUpClick.addEventListener("click", function() {
+    window.open("http://127.0.0.1:5500/PageSignUp/index.html", "_self");
+});

@@ -24,6 +24,11 @@
       "username": "admin1",
       "password": "admin1",
       "id": 5
+    },
+    {
+      "username": "quangdeptrai",
+      "password": "quangdeptrai",
+      "id": 6
     }
   ]
 }

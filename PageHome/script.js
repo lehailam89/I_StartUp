@@ -22,3 +22,9 @@
         window.open("http://127.0.0.1:5500/PageSignIn/index.html", "_blank");
     });
 //end bấm bắt đầu
+
+
+var clickPagePlace = document.querySelector('.click-pagePlace');
+clickPagePlace.addEventListener('click', function(){
+    window.open("http://127.0.0.1:5500/PagePlace/index.html");  
+});
