@@ -4,6 +4,105 @@
 body{
     background: #F2F2EA;
 }
+  /*AI Question */
+  .fixed-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    font-size: 40px;
+    color: #39a6ff;
+    }
+    .fixed-icon .fa-solid{
+        border: 1px solid none;
+        border-radius: 999px;
+    }
+    .fixed-icon .fa-solid:hover{
+        color: rgba(255, 0, 0, 0.586);
+        transition: 0.2s;
+    }
+    .fixed-icon:hover::before {
+        content: "Hỏi AI";
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        color: black;
+        padding: 3px 6px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        white-space: nowrap; /* Chặn chữ xuống dòng */
+        z-index: 1;
+    }
+    .close-button {
+        position: absolute;
+        top: 10px; /* Đặt vị trí của nút đóng */
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .overlay {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        width: 350px; /* Đặt chiều rộng của overlay */
+        height: 550px; /* Đặt chiều cao của overlay */
+        background-color: white; /* Màu nền của overlay */
+        border: none; /* Loại bỏ border */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng cho overlay */
+        z-index: 9999; /* Đặt z-index cao hơn icon */
+        display: none; /* Ẩn overlay ban đầu */
+    }
+    
+    .fixed-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9998; /* Đặt z-index thấp hơn overlay */
+        font-size: 40px;
+        color: #39a6ff;
+        cursor: pointer;
+    }
+    /* CSS */
+.close-button {
+    position: absolute;
+    top: 10px; /* Đặt vị trí của nút đóng */
+    right: 10px;
+    background-color: white; /* Màu nền trắng */
+    border: 1px solid black; /* Đường viền đen */
+    color: black; /* Màu chữ đen */
+    font-size: 10px;
+    cursor: pointer;
+    padding: 3px 7px; /* Thêm khoảng cách giữa nút và biên */
+    border-radius: 5px; /* Bo tròn góc */
+    z-index: 9999; /* Đặt z-index cao hơn overlay */
+    font-weight: 700;
+}
+/* Animation AI */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Kích thước ban đầu */
+    }
+    50% {
+        transform: scale(1.3); /* Kích thước lớn lên */
+    }
+    100% {
+        transform: scale(1); /* Trở lại kích thước ban đầu */
+    }
+}
+
+.fixed-icon .fa-solid {
+    animation: pulse 1s infinite; /* Thực hiện animation với chu kỳ 2s và lặp vô hạn */
+}
+
+
+/* End AI question */
+
 /* Header */
 .header{
     position: sticky;
