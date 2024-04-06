@@ -14,8 +14,8 @@
 </head>
 
 <body>
-     <!-- Header -->
-     <div class="header" id="header">
+    <!-- Header -->
+    <div class="header" id="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-        <!-- End Header -->
+    <!-- End Header -->
 
     <!-- Accommodation -->
     <div class="accommodation">
@@ -73,6 +73,8 @@
         </div>
     </div>
     <!-- End Accommodation -->
+
+    <!-- Request -->
     <div class="setup-house">
         <div class="sth-button">
             <i class="fa-solid fa-arrow-left"></i>
@@ -97,7 +99,18 @@
             <button class="add" onclick="addFeature()">+</button>
         </div>
         <ul id="featureList"></ul>
+        <!-- Gemini AI -->
+        <form action="/" method="post" id="myForm" class="myForm">
+            <label for="text" style="color: #fff">Nhập câu hỏi:</label>
+            <div class="border-ai">
+                <input type="text" id="text" name="text" class="inPut" required />
+                <button type="submit" class="button-ai">Submit</button>
+            </div>
+        </form>
+        <!-- End Gemini AI -->
     </div>
+    <!-- End Request -->
+
 
     <!-- Extend -->
     <div class="extend">

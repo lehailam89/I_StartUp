@@ -167,6 +167,29 @@ body{
 }
 /* End Setup-house */
 
+/* Gemini AI */
+.myForm{
+    border: 1px solid none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #39A7FF;
+}
+.border-ai{
+    margin-top: 10px;
+}
+.inPut{
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.button-ai{
+    border: 1px solid none;
+    background: #87C4FF;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+/* End Gemini AI */
 
 /* Extend */
 .extend{

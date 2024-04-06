@@ -1,3 +1,4 @@
+//
 function addFeature() {
     var featureList = document.getElementById("featureList");
     var listItem = document.createElement("li");
@@ -28,7 +29,9 @@ function addFeature() {
     featureList.appendChild(listItem);
     input.focus();
 }
+//
 
+//
 document.addEventListener("DOMContentLoaded", function() {
     var button = document.querySelector(".acm-button i");
     var accommodation = document.querySelector(".accommodation");
@@ -39,7 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
         setupHouse.style.display = "block";
     });
 });
+//
 
+//
 document.addEventListener("DOMContentLoaded", function() {
     var button = document.querySelector(".sth-button i");
     var accommodation = document.querySelector(".accommodation");
@@ -50,10 +55,47 @@ document.addEventListener("DOMContentLoaded", function() {
         accommodation.style.display = "block";
     });
 });
+//
 
+//
 document.addEventListener("DOMContentLoaded", function() {
     var accommodationHeight = document.querySelector(".accommodation").clientHeight;
     var setupHouse = document.querySelector(".setup-house");
     
     setupHouse.style.height = accommodationHeight + "px";
 });
+//
+
+// AI
+const form = document.getElementById('myForm');
+const paragraph = document.getElementById('myParagraph');
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  const data = {
+    text: document.getElementById('text').value,
+  };
+
+  fetch('/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    paragraph.innerHTML = data;
+  })
+  .catch(error => {
+    console.error('There was a problem with your fetch operation:', error);
+  });
+});
+ 
+//End AI
