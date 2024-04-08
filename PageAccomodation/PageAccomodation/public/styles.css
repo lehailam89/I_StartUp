@@ -121,6 +121,7 @@ body{
 
 /* Setup-house */
 .setup-house{
+    overflow: auto;
     padding: 40px;
     background: #fff;
     color: #39A7FF;
@@ -214,3 +215,6 @@ body{
     color: #00000072;
 }
 /* End Extend */
+
+/* my Paragraph */
+/* End my Paragraph */
