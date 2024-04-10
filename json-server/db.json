@@ -34,6 +34,11 @@
       "username": "admin2",
       "password": "admin2",
       "id": 7
+    },
+    {
+      "username": "lehailam",
+      "password": "lehailam",
+      "id": 8
     }
   ]
 }
