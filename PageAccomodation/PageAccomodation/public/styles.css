@@ -4,6 +4,10 @@
 body{
     background: #E0F4FF;
 }
+.hidden{
+    display: none;
+}
+
 /* Header */
 .header{
     position: sticky;
@@ -17,7 +21,7 @@ body{
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 20px;
-    background: #87C4FD;
+    background: #39A7FF;
     font-size: 18px;
     color: #fff;
 }
@@ -166,6 +170,14 @@ body{
 .setup-house{
     display: none;
 }
+.next-ai {
+    position: fixed;
+    z-index: 9999;
+    font-size: 35px;
+    color: #39A7FF;
+    right: 10px;
+    bottom: 200px; /* Đặt ở góc dưới bên phải của màn hình */
+}
 /* End Setup-house */
 
 /* Gemini AI */
@@ -186,9 +198,22 @@ body{
 }
 .button-ai{
     border: 1px solid none;
-    background: #87C4FF;
+    background: #39A7FF;
     border-radius: 5px;
     padding: 5px 10px;
+}
+.box-ai{
+    width: 100%;
+    background: #fff;
+}
+.ai-return{
+    font-size: 25px;    
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #39A7FF;
+}
+.myParagraph{
+    color: #39A7FF;
 }
 /* End Gemini AI */
 
@@ -197,7 +222,7 @@ body{
     border: 1px solid none;
     width: 40%;
     margin: auto;
-    background: #87C4FF;
+    background: #39A7FF;
     border-radius: 20px;
 }
 .extend .box-extend ul{

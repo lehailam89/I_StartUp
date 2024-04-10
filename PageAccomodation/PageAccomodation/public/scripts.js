@@ -94,3 +94,39 @@ form.addEventListener('submit', event => {
     })
 })
 //End AI
+
+document.querySelector('.box-ai').classList.add('hidden')
+
+document.addEventListener('DOMContentLoaded', function () {
+  var nextAi = document.querySelector('.next-ai i')
+  var setupHouse = document.querySelector('.setup-house')
+  var boxAI = document.querySelector('.box-ai')
+
+  nextAi.addEventListener('click', function () {
+    setupHouse.style.display = 'none'
+    boxAI.style.display = 'block'
+  })
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  var accommodationHeight = document.querySelector('.accommodation').clientHeight;
+  var boxAI = document.querySelector('.box-ai'); // Thêm dòng này để lấy tham chiếu đến phần tử .box-ai
+  
+  if (boxAI) { // Kiểm tra nếu phần tử .box-ai tồn tại
+    boxAI.style.height = accommodationHeight + 'px'; // Thay đổi chiều cao của phần tử .box-ai
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var returnAI = document.querySelector('.ai-return i')
+  var setupHouse = document.querySelector('.setup-house')
+  var boxAI = document.querySelector('.box-ai')
+
+  returnAI.addEventListener('click', function () {
+    setupHouse.style.display = 'block'
+    boxAI.style.display = 'none'
+  })
+})
+
+//Next AI
+

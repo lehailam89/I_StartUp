@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/image_home/sea-transport.png");
+    background-size: 100% 750px;
+}
+/* Header */
+.header{
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    background: #fff;
+}
+.header{
+    border: 1px solid #F2F2EA;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background: #39A7FF;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.header .row .inner-main{
+    display: flex;  
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-left: 0;
+    align-items: center;
+    font-weight: 500;
+}
+.header .inner-main .inner-logo ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.header .inner-main .inner-logo ul li{
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.header .inner-main .inner-list ul{
+    display: flex;
+    list-style-type: none;
+}
+.header .inner-main .inner-list ul li{
+    margin-right: 30px;
+}
+.header .inner-main .inner-tick ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.header .inner-main .inner-tick ul li {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 50px; /* Đặt line-height bằng với chiều cao */
+}
+.header .inner-main .inner-tick ul li a {
+    color: #fff; /* Màu chữ mặc định */
+    cursor: pointer;
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+    display: block; /* Để liên kết có thể nhận được hover và màu sắc chuyển đổi */
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 50px; /* Đặt line-height bằng với chiều cao */
+    transition: color 0.5s, border-color 0.5s; /* Hiệu ứng chuyển đổi màu khi hover */
+}
+
+.header .inner-main .inner-tick ul li a:hover {
+    color: #000 !important; /* Màu chữ đen khi hover */
+}
+.header .inner-main .inner-tick ul li:hover{
+    border-color: transparent;
+    color: #000;
+}
+
+
+/* End header */
+
+/* Transport */
+.section-transport{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.section-transport .box-content{
+    border: 1px solid none;
+    background: #E0F4FF;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;    
+    font-size: 30px;    
+    font-weight: 500;
+}
+.section-transport .car-img img{
+    width: 300px;
+}
+.section-transport .motor-img img{
+    width: 200px;
+}
+.section-transport .train-img img{
+    width: 250px;
+}
+.section-transport .motor{
+    padding-top: 40px;
+}
+.section-transport .train{
+    padding-top: 70px;
+}
+.col-xl-4{
+    position: relative;
+}
+.fa-heart{
+    position: absolute;
+    color: #ddd;
+    top: 20px;
+    left: 50px;
+}
+.arrow-next{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-size: 35px;
+    color: #39A7FF;
+}
+/* End Transport */
+
+/* Transport Detail */
+.sedan{
+    border: 1px solid none;
+    padding: 20px;
+    width: 650px;
+    height: 350px;
+    position: relative;
+    background: #E0F4FF;
+    border-radius: 20px;
+    margin-left: -90px;
+}
+.sedan .sedan-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #39A7FF;
+    font-weight: 600;
+}
+.sedan .sedan-sedan{
+    margin: 0 20px;
+}
+.sedan .sedan-icon{
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    font-size: 25px;
+}
+.sedan-image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    left: 80px;
+    top: 10px; 
+}
+.information{
+    margin-top: 150px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.information .infor-top{
+    display: flex;
+}
+.info-expense{
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+    align-items: center;
+    background-color: #39a6ffd1;  
+    border-radius: 10px;
+    padding: 10px;
+}
+.info-convenient{
+    background-color: #39a6ffd1;  
+    border-radius: 10px;
+    padding: 10px;
+}
+.info-speed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #39a6ffd1;  
+    border-radius: 10px;
+    width: 130px;
+    padding: 10px;  
+}
+.arrow-return{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 35px;
+    color: #39A7FF;
+}
+/* End Transport Detail */
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+/* End Hidden */
+
+/* Extend */
+
+.circle{
+    color: #00000072;
+}
+.extend {
+    position: fixed;
+    bottom: 50px; /* Đặt phần extend ở dưới cùng của màn hình */
+    left: 450px; /* Đặt phần extend ở góc trái của màn hình */
+    background-color: #fff; /* Màu nền của phần extend */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    z-index: 9999; /* Đảm bảo phần extend hiển thị trên tất cả các phần khác */
+    border: 1px solid none;
+    width: 40%;
+    margin: auto;
+    background: #39A7FF;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.box-extend ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around; /* Thay center thành space-between */
+    width: 100%;
+    margin: 0; /* Xóa margin */
+    padding: 5px 50px; /* Xóa padding */
+    color: #fff;
+    font-size: 30px;
+}
+
+/* End Extend */

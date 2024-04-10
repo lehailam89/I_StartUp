@@ -99,8 +99,19 @@
             <button class="add" onclick="addFeature()">+</button>
         </div>
         <ul id="featureList"></ul>
-        <!-- Gemini AI -->
-        <form action="/" method="post" id="myForm" class="myForm">
+        <div class="next-ai">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <!-- End Request -->
+
+    <!-- AI -->
+    <div class="box-ai">
+         <!-- Gemini AI -->
+         <div class="ai-return">
+            <i class="fa-solid fa-arrow-left"></i>
+         </div>
+         <form action="/" method="post" id="myForm" class="myForm">
             <label for="text" style="color: #fff">Nhập câu hỏi:</label>
             <div class="border-ai">
                 <input type="text" id="text" name="text" class="inPut" required />
@@ -110,8 +121,7 @@
         <p id="myParagraph" class="myParagraph"></p>
         <!-- End Gemini AI -->
     </div>
-    <!-- End Request -->
-
+    <!-- End AI -->
 
     <!-- Extend -->
     <div class="extend">
